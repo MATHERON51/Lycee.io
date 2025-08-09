@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheron</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .level-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        .level-card {
+            transition: all 0.3s ease;
+        }
+        .rotate-180 {
+            transform: rotate(180deg);
+        }
+        .chapter-container {
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 1rem;
+        }
+        .chapter-container:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body class="bg-blue-900 min-h-screen">
+    <header class="bg-blue-800 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-square-root-alt text-3xl"></i>
+                    <h1 class="text-2xl md:text-3xl font-bold gradient-text">Mathématiques Académiques</h1>
+                </div>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-6">
+                        <li><a href="#" class="hover:text-yellow-300 transition">Accueil</a></li>
+                        <li><a href="#" class="hover:text-yellow-300 transition">Cours</a></li>
+                        <li><a href="#" class="hover:text-yellow-300 transition">Exercices</a></li>
+                        <li><a href="#" class="hover:text-yellow-300 transition">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="md:hidden text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <section class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Choisissez votre niveau</h2>
+            <p class="text-xl text-blue-100 max-w-3xl mx-auto">Sélectionnez votre classe pour accéder aux ressources de mathématiques adaptées à votre programme scolaire.</p>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Niveau 3ème -->
+            <div class="level-card bg-white rounded-xl overflow-hidden shadow-md">
+                <div class="bg-blue-700 text-white py-4 px-6">
+                    <h3 class="text-2xl font-bold">3ème</h3>
+                    <p class="text-red-100">Collège - Cycle 4</p>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                            <a href="https://www.youtube.com/watch?v=7NorBCmIWMg&list=PLOlmEO-Fwg0fKSH4vp74T4kbEMc_BdTN0&index=1&pp=iAQB" target="_blank" class="hover:underline">Exercice 1 - Priorités des calculs</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                            <a href="https://www.youtube.com/watch?v=ejQSjGXthls&list=PLOlmEO-Fwg0fKSH4vp74T4kbEMc_BdTN0&index=2&pp=iAQB" target="_blank" class="hover:underline">Exercices 2 et 3 - Écritures fractionnaires</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                            <a href="https://www.youtube.com/watch?v=I1YxwG5QfJA&list=PLOlmEO-Fwg0fKSH4vp74T4kbEMc_BdTN0&index=3&pp=iAQB" target="_blank" class="hover:underline">Exercice 4 - Développement</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                            <a href="https://www.youtube.com/watch?v=7UvtT0cMLPk&list=PLOlmEO-Fwg0fKSH4vp74T4kbEMc_BdTN0&index=4&pp=iAQB" target="_blank" class="hover:underline">Exercices 5 et 6 - Factorisation</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                            <a href="https://www.youtube.com/watch?v=h8CHG_UPWsU&list=PLOlmEO-Fwg0fKSH4vp74T4kbEMc_BdTN0&index=5&pp=iAQB" target="_blank" class="hover:underline">Exercices 7 et 8 - Équations</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                            <a href="https://www.youtube.com/watch?v=CSyY7hxjJJQ&list=PLOlmEO-Fwg0fKSH4vp74T4kbEMc_BdTN0&index=6&pp=iAQB" target="_blank" class="hover:underline">Exercice 9 - Repérage</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                            <a href="https://www.youtube.com/watch?v=RElXvTyOHik&list=PLOlmEO-Fwg0fKSH4vp74T4kbEMc_BdTN0&index=7&pp=iAQB" target="_blank" class="hover:underline">Exercice 10 - Théorème de Pythagore et sa réciproque</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                            <a href="https://www.youtube.com/watch?v=Ft8q6n6-omQ&list=PLOlmEO-Fwg0fKSH4vp74T4kbEMc_BdTN0&index=8&pp=iAQB" target="_blank" class="hover:underline">Exercice 11 - Arithmétique</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                            <a href="https://www.youtube.com/watch?v=z_S4QsNZj3U&list=PLOlmEO-Fwg0fKSH4vp74T4kbEMc_BdTN0&index=9&pp=iAQB0gcJCa0JAYcqIYzv" target="_blank" class="hover:underline">Exercice 12 - Fonction affine et droite</a>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition">
+                        Accéder aux ressources
+                    </button>
+                </div>
+            </div>
+
+            <!-- Niveau Seconde -->
+            <div class="level-card bg-white rounded-xl overflow-hidden shadow-md">
+                <div class="bg-blue-600 text-white py-4 px-6">
+                    <h3 class="text-2xl font-bold">Seconde</h3>
+                    <p class="text-red-100">Lycée - Voie générale</p>
+                </div>
+                <div class="p-6">
+                    <div class="space-y-2 mb-6">
+                        <!-- Chapitre 0 -->
+                        <div class="chapter-container">
+                            <button onclick="toggleChapters('seconde-0')" class="w-full flex justify-between items-center py-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                                    <span>Chapitre 0 - Calculs</span>
+                                </div>
+                                <i id="seconde-0-arrow" class="fas fa-chevron-down text-red-600 transition-transform"></i>
+                            </button>
+                            <div id="seconde-0-chapters" class="hidden pl-8 mt-2 space-y-2">
+                                <p class="text-gray-600">• Écritures fractionnaires</p>
+                                <p class="text-gray-600">• Développement</p>
+                                <p class="text-gray-600">• Identités remarquables</p>
+                                <p class="text-gray-600">• Factorisation</p>
+                            </div>
+                        </div>
+
+                        <!-- Chapitre 1 -->
+                        <div class="chapter-container">
+                            <button onclick="toggleChapters('seconde-1')" class="w-full flex justify-between items-center py-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                    <span>Chapitre 1 - Nombres</span>
+                                </div>
+                                <i id="seconde-1-arrow" class="fas fa-chevron-down text-red-600 transition-transform"></i>
+                            </button>
+                            <div id="seconde-1-chapters" class="hidden pl-8 mt-2 space-y-2">
+                                <p class="text-gray-600">• Ensembles</p>
+                                <p class="text-gray-600">• Intervalles</p>
+                                <p class="text-gray-600">• Équations</p>
+                                <p class="text-gray-600">• Équations produit nul</p>
+                                <p class="text-gray-600">• Inéquations</p>
+                            </div>
+                        </div>
+
+                        <!-- Chapitre 2 -->
+                        <div class="chapter-container">
+                            <button onclick="toggleChapters('seconde-2')" class="w-full flex justify-between items-center py-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                    <span>Chapitre 2 - Généralités sur les fonctions</span>
+                                </div>
+                                <i id="seconde-2-arrow" class="fas fa-chevron-down text-red-600 transition-transform"></i>
+                            </button>
+                            <div id="seconde-2-chapters" class="hidden pl-8 mt-2 space-y-2">
+                                <p class="text-gray-600">• Images et antécédents</p>
+                                <p class="text-gray-600">• Tableau de valeurs</p>
+                                <p class="text-gray-600">• Repère - Abscisse et ordonnée</p>
+                                <p class="text-gray-600">• Représentation graphique</p>
+                                <p class="text-gray-600">• Appartenance d'un point à une courbe</p>
+                                <p class="text-gray-600">• Résolution graphique d'équations et inéquations</p>
+                            </div>
+                        </div>
+
+                        <!-- Chapitre 3 -->
+                        <div class="chapter-container">
+                            <button onclick="toggleChapters('seconde-3')" class="w-full flex justify-between items-center py-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                    <span>Chapitre 3 - Proportions et évolution</span>
+                                </div>
+                                <i id="seconde-3-arrow" class="fas fa-chevron-down text-red-600 transition-transform"></i>
+                            </button>
+                            <div id="seconde-3-chapters" class="hidden pl-8 mt-2 space-y-2">
+                                <p class="text-gray-600">• Proportions</p>
+                                <p class="text-gray-600">• Proportions échelonnées</p>
+                                <p class="text-gray-600">• Taux d'évolution</p>
+                                <p class="text-gray-600">• Coefficient multiplicateur</p>
+                                <p class="text-gray-600">• Augmentation ou diminution</p>
+                                <p class="text-gray-600">• Évolutions successives</p>
+                                <p class="text-gray-600">• Évolutions réciproques</p>
+                            </div>
+                        </div>
+
+                        <!-- Chapitre 4 -->
+                        <div class="chapter-container">
+                            <button onclick="toggleChapters('seconde-4')" class="w-full flex justify-between items-center py-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                    <span>Chapitre 4 - Étude de fonctions</span>
+                                </div>
+                                <i id="seconde-4-arrow" class="fas fa-chevron-down text-red-600 transition-transform"></i>
+                            </button>
+                            <div id="seconde-4-chapters" class="hidden pl-8 mt-2 space-y-2">
+                                <p class="text-gray-600">• Variations</p>
+                                <p class="text-gray-600">• Extremum</p>
+                                <p class="text-gray-600">• Signes</p>
+                                <p class="text-gray-600">• Parité</p>
+                            </div>
+                        </div>
+
+                        <!-- Chapitre 5 -->
+                        <div class="chapter-container">
+                            <button onclick="toggleChapters('seconde-5')" class="w-full flex justify-between items-center py-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                    <span>Chapitre 5 - Vecteur (1)</span>
+                                </div>
+                                <i id="seconde-5-arrow" class="fas fa-chevron-down text-red-600 transition-transform"></i>
+                            </button>
+                            <div id="seconde-5-chapters" class="hidden pl-8 mt-2 space-y-2">
+                                <p class="text-gray-600">• Translation</p>
+                                <p class="text-gray-600">• Égalité de vecteurs</p>
+                                <p class="text-gray-600">• Coordonnées de vecteurs</p>
+                                <p class="text-gray-600">• Distance et milieu</p>
+                                <p class="text-gray-600">• Somme et différence de vecteurs</p>
+                            </div>
+                        </div>
+
+                        <!-- Chapitre 6 -->
+                        <div class="chapter-container">
+                            <button onclick="toggleChapters('seconde-6')" class="w-full flex justify-between items-center py-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                    <span>Chapitre 6 - Fonctions affines</span>
+                                </div>
+                                <i id="seconde-6-arrow" class="fas fa-chevron-down text-red-600 transition-transform"></i>
+                            </button>
+                            <div id="seconde-6-chapters" class="hidden pl-8 mt-2 space-y-2">
+                                <p class="text-gray-600">• Définitions et exemples</p>
+                                <p class="text-gray-600">• Représentations graphiques : Droites</p>
+                                <p class="text-gray-600">• Coefficient directeur et ordonnée à l'origine</p>
+                                <p class="text-gray-600">• Variations</p>
+                                <p class="text-gray-600">• Signe</p>
+                                <p class="text-gray-600">• Inéquation produit</p>
+                                <p class="text-gray-600">• Inéquation quotient</p>
+                            </div>
+                        </div>
+
+                        <!-- Chapitre 7 -->
+                        <div class="chapter-container">
+                            <button onclick="toggleChapters('seconde-7')" class="w-full flex justify-between items-center py-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                    <span>Chapitre 7 - Statistiques</span>
+                                </div>
+                                <i id="seconde-7-arrow" class="fas fa-chevron-down text-red-600 transition-transform"></i>
+                            </button>
+                            <div id="seconde-7-chapters" class="hidden pl-8 mt-2 space-y-2">
+                                <p class="text-gray-600">• Effectifs et fréquences</p>
+                                <p class="text-gray-600">• Représentation graphique</p>
+                                <p class="text-gray-600">• Couple moyenne / écart type</p>
+                                <p class="text-gray-600">• Couple médiane / écart interquartile</p>
+                            </div>
+                        </div>
+
+                        <!-- Chapitre 8 -->
+                        <div class="chapter-container">
+                            <button onclick="toggleChapters('seconde-8')" class="w-full flex justify-between items-center py-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                    <span>Chapitre 8 - Fonction carré et cube</span>
+                                </div>
+                                <i id="seconde-8-arrow" class="fas fa-chevron-down text-red-600 transition-transform"></i>
+                            </button>
+                            <div id="seconde-8-chapters" class="hidden pl-8 mt-2 space-y-2">
+                                <p class="text-gray-600">• Fonction carré - Activité</p>
+                                <p class="text-gray-600">• Fonction carré - Définition - Signe - Variations - Parité</p>
+                                <p class="text-gray-600">• Fonction carré - Équations - Encadrement - Inéquations</p>
+                                <p class="text-gray-600">• Fonction cube</p>
+                            </div>
+                        </div>
+
+                        <!-- Chapitre 9 -->
+                        <div class="chapter-container">
+                            <button onclick="toggleChapters('seconde-9')" class="w-full flex justify-between items-center py-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                    <span>Chapitre 9 - Vecteur (2) - Colinéarité</span>
+                                </div>
+                                <i id="seconde-9-arrow" class="fas fa-chevron-down text-red-600 transition-transform"></i>
+                            </button>
+                            <div id="seconde-9-chapters" class="hidden pl-8 mt-2 space-y-2">
+                                <p class="text-gray-600">• Vecteurs colinéaires</p>
+                                <p class="text-gray-600">• Vecteurs colinéaires - Applications</p>
+                                <p class="text-gray-600">• Vecteurs directeurs</p>
+                            </div>
+                        </div>
+
+                        <!-- Chapitre 10 -->
+                        <div class="chapter-container">
+                            <button onclick="toggleChapters('seconde-10')" class="w-full flex justify-between items-center py-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                    <span>Chapitre 10 - Fonction racine carrée et inverse</span>
+                                </div>
+                                <i id="seconde-10-arrow" class="fas fa-chevron-down text-red-600 transition-transform"></i>
+                            </button>
+                            <div id="seconde-10-chapters" class="hidden pl-8 mt-2 space-y-2">
+                                <p class="text-gray-600">• Fonction inverse - Définition - Signes et Variations</p>
+                                <p class="text-gray-600">• Fonction inverse - Encadrement</p>
+                                <p class="text-gray-600">• Fonction inverse - Parité et hyperbole</p>
+                                <p class="text-gray-600">• Fonction inverse - Équations et inéquations</p>
+                                <p class="text-gray-600">• Fonction racine carrée</p>
+                            </div>
+                        </div>
+
+                        <!-- Chapitre 11 -->
+                        <div class="chapter-container">
+                            <button onclick="toggleChapters('seconde-11')" class="w-full flex justify-between items-center py-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                    <span>Chapitre 11 - Probabilités</span>
+                                </div>
+                                <i id="seconde-11-arrow" class="fas fa-chevron-down text-red-600 transition-transform"></i>
+                            </button>
+                            <div id="seconde-11-chapters" class="hidden pl-8 mt-2 space-y-2">
+                                <p class="text-gray-600">• Loi de probabilités</p>
+                                <p class="text-gray-600">• Évènements</p>
+                                <p class="text-gray-600">• Réunion et intersection d'événements</p>
+                                <p class="text-gray-600">• Exercice type - Utiliser les propriétés du cours</p>
+                                <p class="text-gray-600">• Exercice type - Tableaux à double entrée</p>
+                                <p class="text-gray-600">• Exercices type - Arbre de probabilités</p>
+                                <p class="text-gray-600">• Exercice type - Diagramme à patates (de Venn)</p>
+                            </div>
+                        </div>
+
+                        <!-- Chapitre 12 -->
+                        <div class="chapter-container">
+                            <button onclick="toggleChapters('seconde-12')" class="w-full flex justify-between items-center py-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                    <span>Chapitre 12 - Équation de droites</span>
+                                </div>
+                                <i id="seconde-12-arrow" class="fas fa-chevron-down text-red-600 transition-transform"></i>
+                            </button>
+                            <div id="seconde-12-chapters" class="hidden pl-8 mt-2 space-y-2">
+                                <p class="text-gray-600">• Équations réduites</p>
+                                <p class="text-gray-600">• Coefficient directeur et ordonnée à l'origine</p>
+                                <p class="text-gray-600">• Lecture graphique et applications bilan</p>
+                                <p class="text-gray-600">• Position relative et système</p>
+                                <p class="text-gray-600">• Système par substitution et combinaison</p>
+                                <p class="text-gray-600">• Équations cartésiennes</p>
+                            </div>
+                        </div>
+
+                        <!-- Chapitre 13 -->
+                        <div class="chapter-container">
+                            <button onclick="toggleChapters('seconde-13')" class="w-full flex justify-between items-center py-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                    <span>Chapitre 13 - Arithmétique</span>
+                                </div>
+                                <i id="seconde-13-arrow" class="fas fa-chevron-down text-red-600 transition-transform"></i>
+                            </button>
+                            <div id="seconde-13-chapters" class="hidden pl-8 mt-2 space-y-2">
+                                <p class="text-gray-600">• Multiples et diviseurs</p>
+                                <p class="text-gray-600">• Nombres pairs et impairs</p>
+                                <p class="text-gray-600">• Nombres premiers</p>
+                                <p class="text-gray-600">• Ensemble des rationnels</p>
+                                <p class="text-gray-600">• Raisonnement par l'absurde</p>
+                            </div>
+                        </div>
+
+                        <!-- Chapitre 14 - Algorithmes et Python -->
+                        <div class="chapter-container">
+                            <button onclick="toggleChapters('seconde-14')" class="w-full flex justify-between items-center py-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                    <span>Chapitre transversal - Algorithmes et Python</span>
+                                </div>
+                                <i id="seconde-14-arrow" class="fas fa-chevron-down text-red-600 transition-transform"></i>
+                            </button>
+                            <div id="seconde-14-chapters" class="hidden pl-8 mt-2 space-y-2">
+                                <p class="text-gray-600">• Variables - Affectation - Exemples</p>
+                                <p class="text-gray-600">• Fonctions - Exemples</p>
+                                <p class="text-gray-600">• Le SI</p>
+                                <p class="text-gray-600">• Le Pour</p>
+                                <p class="text-gray-600">• Le Tant que</p>
+                                <p class="text-gray-600">• Listes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="w-full bg-red-600 hover:bg-red-700 text-white py-2 rounded-lg transition">
+                        Accéder aux ressources
+                    </button>
+                </div>
+            </div>
+
+            <!-- Niveau 1ère générale -->
+            <div class="level-card bg-white rounded-xl overflow-hidden shadow-md">
+                <div class="bg-blue-800 text-white py-4 px-6">
+                    <h3 class="text-2xl font-bold">1ère Générale</h3>
+                    <p class="text-red-100">Lycée - Spécialité Mathématiques</p>
+                </div>
+                <div class="p-6">
+                    <div class="space-y-2 mb-6">
+                        <!-- Chapitre 1 -->
+                        <div class="chapter-container">
+                            <button onclick="toggleChapters('premiere-1')" class="w-full flex justify-between items-center py-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                    <span>Chapitre 1 - Second degré</span>
+                                </div>
+                                <i id="premiere-1-arrow" class="fas fa-chevron-down text-red-600 transition-transform"></i>
+                            </button>
+                            <div id="premiere-1-chapters" class="hidden pl-8 mt-2 space-y-2">
+                                <p class="text-gray-600">• Activité et définition</p>
+                                <p class="text-gray-600">• Représentation graphique et rôle de a et c</p>
+                                <p class="text-gray-600">• Forme canonique</p>
+                                <p class="text-gray-600">• Variations et extremums</p>
+                                <p class="text-gray-600">• Équations du second degré</p>
+                                <p class="text-gray-600">• Somme et produit des racines</p>
+                                <p class="text-gray-600">• Signes et inéquations</p>
+                            </div>
+                        </div>
+
+                        <!-- Chapitre 2 -->
+                        <div class="chapter-container">
+                            <button onclick="toggleChapters('premiere-2')" class="w-full flex justify-between items-center py-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                    <span>Chapitre 2 - Trigonométrie</span>
+                                </div>
+                                <i id="premiere-2-arrow" class="fas fa-chevron-down text-red-600 transition-transform"></i>
+                            </button>
+                            <div id="premiere-2-chapters" class="hidden pl-8 mt-2 space-y-2">
+                                <p class="text-gray-600">• Cercle trigonométrique</p>
+                                <p class="text-gray-600">• Le radian</p>
+                                <p class="text-gray-600">• Angles orientés</p>
+                                <p class="text-gray-600">• Mesure principale</p>
+                                <p class="text-gray-600">• Valeurs remarquables de cosinus et sinus</p>
+                                <p class="text-gray-600">• Cosinus et sinus d'un angle</p>
+                                <p class="text-gray-600">• Équations cos x = cos a · sin x = sin a · systèmes</p>
+                                <p class="text-gray-600">• Formules d'addition et de duplication des cosinus et sinus</p>
+                                <p class="text-gray-600">• Fonctions circulaires</p>
+                            </div>
+                        </div>
+
+                        <!-- Chapitre 3 -->
+                        <div class="chapter-container">
+                            <button onclick="toggleChapters('premiere-3')" class="w-full flex justify-between items-center py-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                    <span>Chapitre 3 - Suites numériques</span>
+                                </div>
+                                <i id="premiere-3-arrow" class="fas fa-chevron-down text-red-600 transition-transform"></i>
+                            </button>
+                            <div id="premiere-3-chapters" class="hidden pl-8 mt-2 space-y-2">
+                                <p class="text-gray-600">• Généralités et modes de génération</p>
+                                <p class="text-gray-600">• Représentations graphiques et utilisation de la calculatrice</p>
+                                <p class="text-gray-600">• Variations</p>
+                            </div>
+                        </div>
+
+                        <!-- Chapitre 4 -->
+                        <div class="chapter-container">
+                            <button onclick="toggleChapters('premiere-4')" class="w-full flex justify-between items-center py-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                    <span>Chapitre 4 - Dérivation (1) - Nombre dérivé et tangente</span>
+                                </div>
+                                <i id="premiere-4-arrow" class="fas fa-chevron-down text-red-600 transition-transform"></i>
+                            </button>
+                            <div id="premiere-4-chapters" class="hidden pl-8 mt-2 space-y-2">
+                                <p class="text-gray-600">• Activité</p>
+                                <p class="text-gray-600">• Taux de variation</p>
+                                <p class="text-gray-600">• Nombre dérivé</p>
+                                <p class="text-gray-600">• Tangente</p>
+                            </div>
+                        </div>
+
+                        <!-- Chapitre 5 -->
+                        <div class="chapter-container">
+                            <button onclick="toggleChapters('premiere-5')" class="w-full flex justify-between items-center py-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                    <span>Chapitre 5 - Probabilité conditionnelle</span>
+                                </div>
+                                <i id="premiere-5-arrow" class="fas fa-chevron-down text-red-600 transition-transform"></i>
+                            </button>
+                            <div id="premiere-5-chapters" class="hidden pl-8 mt-2 space-y-2">
+                                <p class="text-gray-600">• Définitions et propriétés · Tableau à double entrée</p>
+                                <p class="text-gray-600">• Arbre pondéré et formule des probabilités totales</p>
+                                <p class="text-gray-600">• Indépendance de deux événements</p>
+                                <p class="text-gray-600">• Succession de deux épreuves indépendantes</p>
+                            </div>
+                        </div>
+
+                        <!-- Chapitre 6 -->
+                        <div class="chapter-container">
+                            <button onclick="toggleChapters('premiere-6')" class="w-full flex justify-between items-center py-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                    <span>Chapitre 6 - Dérivation (2) - Dérivées usuelles et opérations</span>
+                                </div>
+                                <i id="premiere-6-arrow" class="fas fa-chevron-down text-red-600 transition-transform"></i>
+                            </button>
+                            <div id="premiere-6-chapters" class="hidden pl-8 mt-2 space-y-2">
+                                <p class="text-gray-600">• Fonctions dérivées</p>
+                                <p class="text-gray-600">• Produit d'un réel avec une fonction</p>
+                                <p class="text-gray-600">• Dérivée d'une somme ou différence</p>
+                                <p class="text-gray-600">• Dérivée d'un trinôme</p>
+                                <p class="text-gray-600">• Dérivée d'un produit</p>
+                                <p class="text-gray-600">• Dérivée d'un quotient et de l'inverse d'une fonction</p>
+                                <p class="text-gray-600">• Dérivée de la composée de deux fonctions</p>
+                            </div>
+                        </div>
+
+                        <!-- Chapitre 7 -->
+                        <div class="chapter-container">
+                            <button onclick="toggleChapters('premiere-7')" class="w-full flex justify-between items-center py-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                    <span>Chapitre 7 - Suites (2) - Arithmétiques et géométriques</span>
+                                </div>
+                                <i id="premiere-7-arrow" class="fas fa-chevron-down text-red-600 transition-transform"></i>
+                            </button>
+                            <div id="premiere-7-chapters" class="hidden pl-8 mt-2 space-y-2">
+                                <p class="text-gray-600">• Suites arithmétiques - Activité</p>
+                                <p class="text-gray-600">• Suites arithmétiques - Définition / Reconnaître une suite arithmétique</p>
+                                <p class="text-gray-600">• Suites arithmétiques - Terme général</p>
+                                <p class="text-gray-600">• Suites arithmétiques - Variations et croissance linéaire</p>
+                                <p class="text-gray-600">• Suites arithmétiques - Somme</p>
+                                <p class="text-gray-600">• Suites arithmétiques - Limites / Exercice bilan</p>
+                                <p class="text-gray-600">• Suites géométriques - Activité</p>
+                                <p class="text-gray-600">• Suites géométriques - Définition / Reconnaître une suite géométrique</p>
+                                <p class="text-gray-600">• Suites géométriques - Terme général</p>
+                                <p class="text-gray-600">• Suites géométriques - Variations et croissance exponentielle</p>
+                                <p class="text-gray-600">• Suites géométriques - Somme</p>
+                                <p class="text-gray-600">• Étude de suites du type u(n+1) = f(u(n))</p>
+                            </div>
+                        </div>
+
+                        <!-- Chapitre 8 -->
+                        <div class="chapter-container">
+                            <button onclick="toggleChapters('premiere-8')" class="w-full flex justify-between items-center py-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                    <span>Chapitre 8 - Dérivation (3) - Variation et extremum</span>
+                                </div>
+                                <i id="premiere-8-arrow" class="fas fa-chevron-down text-red-600 transition-transform"></i>
+                            </button>
+                            <div id="premiere-8-chapters" class="hidden pl-8 mt-2 space-y-2">
+                                <p class="text-gray-600">• Activité</p>
+                                <p class="text-gray-600">• Lien entre le signe de la dérivée et les variations d'une fonction</p>
+                                <p class="text-gray-600">• Extremums et application bilan</p>
+                                <p class="text-gray-600">• Preuve des variations d'un trinôme</p>
+                                <p class="text-gray-600">• Nombre de solutions de l'équation f(x) = k</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="w-full bg-red-600 hover:bg-red-700 text-white py-2 rounded-lg transition">
+                        Accéder aux ressources
+                    </button>
+                </div>
+            </div>
+
+            <!-- Niveau 1ère STI2D -->
+            <div class="level-card bg-white rounded-xl overflow-hidden shadow-md">
+                <div class="bg-red-700 text-white py-4 px-6">
+                    <h3 class="text-2xl font-bold">1ère STI2D</h3>
+                    <p class="text-red-100">Lycée - Technologique</p>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                            <span>Applications technologiques</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                            <span>Modélisation</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                            <span>Résolution de problèmes</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-red-600 hover:bg-red-700 text-white py-2 rounded-lg transition">
+                        Accéder aux ressources
+                    </button>
+                </div>
+            </div>
+
+            <!-- Niveau Terminale STI2D -->
+            <div class="level-card bg-white rounded-xl overflow-hidden shadow-md">
+                <div class="bg-blue-900 text-white py-4 px-6">
+                    <h3 class="text-2xl font-bold">Terminale STI2D</h3>
+                    <p class="text-red-100">Lycée - Technologique</p>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                            <span>Fonctions logarithmes</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                            <span>Intégrales</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                            <span>Lois de probabilité</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-red-600 hover:bg-red-700 text-white py-2 rounded-lg transition">
+                        Accéder aux ressources
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-blue-950 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Mathéron</h3>
+                    <p class="text-blue-200">Ressources pédagogiques pour tous les niveaux de mathématiques du collège au lycée.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Liens utiles</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-blue-200 hover:text-white transition">Programmes officiels</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition">Annales d'examens</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition">Méthodologie</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-blue-300"></i>
+                            <span>contact@maths-academie.fr</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2 text-blue-300"></i>
+                            <span>01 23 45 67 89</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center text-blue-300">
+                <p>&copy; 2023 Mathématiques Académiques. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle chapters visibility
+        function toggleChapters(id) {
+            const content = document.getElementById(`${id}-chapters`);
+            const arrow = document.getElementById(`${id}-arrow`);
+            
+            content.classList.toggle('hidden');
+            arrow.classList.toggle('rotate-180');
+        }
+
+        // Toggle themes visibility
+        function toggleThemes(id) {
+            const content = document.getElementById(`${id}-themes`);
+            const arrow = document.getElementById(`${id}-arrow`);
+            
+            content.classList.toggle('hidden');
+            arrow.classList.toggle('rotate-180');
+        }
+
+        // Animation pour les cartes de niveau
+        document.querySelectorAll('.level-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.2)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = '';
+                this.style.boxShadow = '';
+            });
+        });
+
+        // Menu mobile (simplifié)
+        document.querySelector('button.md\\:hidden').addEventListener('click', function() {
+            alert("Menu mobile - À implémenter");
+        });
+    </script>
+</body>
+</html>
